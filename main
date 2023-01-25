@@ -15,8 +15,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local BlatantTab = Window:CreateTab("Blatant", 4483362458) -- Title, Image
-
-local BlatantSection = BlatantTab:CreateSection("Killaura")
+local MainSection = BlatantTab:CreateSection("Killaura")
 
 local InstaKillToggle = BlatantTab:CreateToggle({
 	Name = "Insta Kill",
