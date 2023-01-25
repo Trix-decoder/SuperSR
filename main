@@ -18,7 +18,7 @@ local BlatantTab = Window:CreateTab("Blatant", 4483362458) -- Title, Image
 
 local BlatantSection = Tab:CreateSection("Killaura")
 
-local InstaKillToggle = MainTab:CreateToggle({
+local InstaKillToggle = BlatantTab:CreateToggle({
 	Name = "Insta Kill",
 	CurrentValue = false,
 	Flag = "InstaKill", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
@@ -134,9 +134,9 @@ local InstaKillToggle = MainTab:CreateToggle({
 	end,
 })
 
-local FlySection = MainTab:CreateSection("Fly")
+local FlySection = BlatantTab:CreateSection("Fly")
 
-local FlyToggle = MainTab:CreateToggle({
+local FlyToggle = BlatantTab:CreateToggle({
 	Name = "Fly",
 	CurrentValue = false,
 	Flag = "Fly", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
@@ -157,7 +157,7 @@ local FlyToggle = MainTab:CreateToggle({
 	end,
 })
 
-local GravityFlyToggle = MainTab:CreateToggle({
+local GravityFlyToggle = BlatantTab:CreateToggle({
 	Name = "Gravity Fly",
 	CurrentValue = false,
 	Flag = "GravFly", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
@@ -170,9 +170,9 @@ local GravityFlyToggle = MainTab:CreateToggle({
 	end,
 })
 
-local LocalPlayerSection = MainTab:CreateSection("LocalPlayer")
+local LocalPlayerSection = BlatantTab:CreateSection("LocalPlayer")
 
-local Speed = MainTab:CreateSlider({
+local Speed = Blatant:CreateSlider({
 	Name = "Speed",
 	Range = {16, 100},
 	Increment = 1,
@@ -186,7 +186,7 @@ local Speed = MainTab:CreateSlider({
 
 
 
-local Gravity = MainTab:CreateSlider({
+local Gravity = BlatantTab:CreateSlider({
 	Name = "Gravity",
 	Range = {192, 0},
 	Increment = 1,
