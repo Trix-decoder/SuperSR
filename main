@@ -14,10 +14,9 @@ local Window = Rayfield:CreateWindow({
    },
 })
 
-local MainTab = Window:CreateTab("Main", 4483362458) -- Title, Image
+local BlatantTab = Window:CreateTab("Blatant", 4483362458) -- Title, Image
 
-local MainSection = Tab:CreateSection("Killaura")
-
+local BlatantSection = Tab:CreateSection("Killaura")
 
 local InstaKillToggle = MainTab:CreateToggle({
 	Name = "Insta Kill",
